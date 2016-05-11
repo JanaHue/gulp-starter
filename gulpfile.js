@@ -31,7 +31,7 @@ gulp.task('assets', function() {
 });
 
 gulp.task('serve', ['stylus', 'js'], function() {
-    server = gls.static('public', 8080);
+    server = gls.static('./', 8080);
     server.start();
 })
 
